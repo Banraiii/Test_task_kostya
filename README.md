@@ -24,11 +24,11 @@ pip install -r requirements.txt
 ```
 pytest -v -s --tb=line --language=en -m all_test
 ```
-Запуск будет осуществляется через фреймворк pytest, для запуска обеих тестов используйте:
+Для запуска первого теста используйте:
 ```
 pytest -v -s --tb=line --language=en -m search_in_yandex
 ```
-Запуск будет осуществляется через фреймворк pytest, для запуска обеих тестов используйте:
+Для запуска второго теста используйте:
 ```
 pytest -v -s --tb=line --language=en -m yandex_images
 ```
