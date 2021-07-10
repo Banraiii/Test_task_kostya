@@ -10,7 +10,7 @@ class ResultPage(BasePage):
 		super(ResultPage, self).__init__(*args, **kwargs)
 
 	def should_be_five_result_link(self,num0,num1,num2,num3,num4):
-		time.sleep(1)
+		self.is_element_present_and_visibl(*ResultPageLocators.LINK_IN_SUBTITLE)
 		self.should_be_in_first_link_word_tensor(num0)
 		self.should_be_in_two_link_word_tensor(num1)
 		self.should_be_in_three_link_word_tensor(num2)
